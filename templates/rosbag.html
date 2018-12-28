@@ -26,24 +26,5 @@
             </div>
         </div>
     </header>
-
-    <div class="container">
-        <strong>
-            <h4>
-                <label for="name" accesskey="n">ROSBAG DATA</label>
-            </h4>
-        </strong>
-        <table class="table table-striped">
-            {% for file in bagfiles %}
-            {% for size in sizes %}
-            <tr>
-                <th scope="row">{{loop.index0}}</th>
-                <td>{{file}}</td>
-                <td>{{size}}</td>
-            </tr>
-            {% endfor %}
-            {% endfor %}
-        </table>
-    </div>
 </body>
 </html>
